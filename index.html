@@ -696,6 +696,11 @@
     }
     .link-github:hover { border-color: var(--accent); color: var(--accent); }
 
+    /* ─── RESUMEIQ CARD ─── */
+    .project-card-featured { border-color: rgba(0,212,255,0.2); }
+    .preview-resumeiq { background: linear-gradient(135deg,#050A20,#0A1840); font-size: 3rem; }
+    .project-badge-right { left: auto; right: 14px; }
+
     /* ─── CERTIFICATIONS ─── */
     #certifications { background: var(--bg2); }
 
@@ -1170,7 +1175,7 @@
 
           <div class="profile-stats">
             <div class="pstat">
-              <div class="pstat-num">6+</div>
+              <div class="pstat-num">7+</div>
               <div class="pstat-label">Projects</div>
             </div>
             <div class="pstat">
@@ -1237,8 +1242,8 @@
           <div class="info-card">
             <div class="info-icon"><i class="fas fa-code"></i></div>
             <div class="info-content">
-              <h4>5+ Live Projects</h4>
-              <p>Deployed web apps, mobile tools & data analysis projects</p>
+              <h4>6+ Live Projects</h4>
+              <p>Deployed web apps, AI platforms, mobile tools & data analysis projects</p>
             </div>
           </div>
           <div class="info-card">
@@ -1304,6 +1309,10 @@
             <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
           </div>
           <div class="skill-bar-row">
+            <div class="skill-bar-label"><span>Node.js & Express.js</span><span>65%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="65"></div></div>
+          </div>
+          <div class="skill-bar-row">
             <div class="skill-bar-label"><span>Flutter / Dart</span><span>55%</span></div>
             <div class="skill-bar-track"><div class="skill-bar-fill" data-width="55"></div></div>
           </div>
@@ -1363,6 +1372,33 @@
       <p class="section-desc">Real applications — deployed and live. Each project was built to solve an actual problem.</p>
 
       <div class="projects-grid">
+
+        <!-- ResumeIQ -->
+        <div class="project-card project-card-featured reveal">
+          <div class="project-preview">
+            <div class="project-preview-placeholder preview-resumeiq">🤖</div>
+            <div class="project-preview-overlay"></div>
+            <span class="project-badge badge-live">🟢 Live</span>
+            <span class="project-badge badge-featured project-badge-right">⭐ Flagship</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">ResumeIQ — AI Career Platform</h3>
+            <p class="project-desc">Full-stack AI-powered career platform bridging candidates and companies. Features real-time resume-to-job AI match scoring (Groq/LLaMA), an AI cover letter generator, live job board, employer dashboard, in-platform messaging, an admin panel, and Google Sign-In via Firebase.</p>
+            <div class="project-tech">
+              <span class="tech-chip">Node.js</span>
+              <span class="tech-chip">Express.js</span>
+              <span class="tech-chip">PostgreSQL</span>
+              <span class="tech-chip">Groq AI</span>
+              <span class="tech-chip">Firebase Auth</span>
+              <span class="tech-chip">JWT</span>
+              <span class="tech-chip">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://resumeiq-1-f1zh.onrender.com" target="_blank" class="project-link link-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="https://github.com/k-a-v-e-l-o/ResumeIQ" target="_blank" class="project-link link-github"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
 
         <!-- Bang Fashion 2.0 -->
         <div class="project-card reveal">
