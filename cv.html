@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kabelo Mashoene — CV 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Calibri', 'Arial', sans-serif;
+      font-size: 10.5pt;
+      color: #1a1a1a;
+      background: #fff;
+      line-height: 1.5;
+    }
+
+    .page {
+      max-width: 794px;
+      margin: 0 auto;
+      padding: 36px 48px;
+    }
+
+    /* ── HEADER ── */
+    .cv-header {
+      margin-bottom: 18px;
+    }
+
+    .cv-name {
+      font-size: 26pt;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      color: #0a0a0a;
+      text-transform: uppercase;
+      line-height: 1.1;
+      margin-bottom: 4px;
+    }
+
+    .cv-title {
+      font-size: 10pt;
+      color: #1e50a0;
+      font-weight: 600;
+      margin-bottom: 10px;
+      letter-spacing: 0.02em;
+    }
+
+    .cv-contact {
+      font-size: 9.5pt;
+      color: #333;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 18px;
+      align-items: center;
+      margin-bottom: 4px;
+    }
+
+    .cv-contact a { color: #1e50a0; text-decoration: none; }
+    .cv-contact a:hover { text-decoration: underline; }
+
+    .cv-contact-row2 {
+      font-size: 9.5pt;
+      color: #333;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 18px;
+    }
+    .cv-contact-row2 a { color: #1e50a0; text-decoration: none; }
+
+    hr.header-line {
+      border: none;
+      border-top: 2px solid #1e50a0;
+      margin: 10px 0 0;
+    }
+
+    /* ── SECTIONS ── */
+    .section { margin-top: 16px; }
+
+    .section-title {
+      font-size: 10.5pt;
+      font-weight: 700;
+      color: #1e50a0;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      border-bottom: 1px solid #1e50a0;
+      padding-bottom: 2px;
+      margin-bottom: 10px;
+    }
+
+    /* ── SUMMARY ── */
+    .summary p {
+      font-size: 10pt;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* ── EDUCATION ── */
+    .edu-entry { margin-bottom: 12px; }
+    .edu-entry:last-child { margin-bottom: 0; }
+
+    .edu-degree {
+      font-weight: 700;
+      font-size: 10.5pt;
+    }
+
+    .edu-school {
+      font-size: 9.5pt;
+      color: #444;
+      margin-bottom: 2px;
+    }
+
+    .edu-year {
+      font-size: 9pt;
+      color: #555;
+      font-style: italic;
+      margin-bottom: 4px;
+    }
+
+    ul.edu-bullets {
+      padding-left: 18px;
+      font-size: 9.5pt;
+      color: #333;
+    }
+    ul.edu-bullets li { margin-bottom: 2px; }
+
+    /* ── SKILLS ── */
+    .skills-table { width: 100%; border-collapse: collapse; }
+    .skills-table td {
+      font-size: 9.5pt;
+      padding: 2px 0;
+      vertical-align: top;
+    }
+    .skills-table td:first-child {
+      font-weight: 700;
+      width: 185px;
+      color: #1a1a1a;
+      white-space: nowrap;
+      padding-right: 10px;
+    }
+
+    /* ── PROJECTS ── */
+    .project-entry { margin-bottom: 14px; }
+    .project-entry:last-child { margin-bottom: 0; }
+
+    .project-header {
+      font-size: 10.5pt;
+      font-weight: 700;
+      color: #0a0a0a;
+      margin-bottom: 1px;
+    }
+
+    .project-header a {
+      font-weight: 400;
+      font-size: 9.5pt;
+      color: #1e50a0;
+      text-decoration: none;
+    }
+    .project-header a:hover { text-decoration: underline; }
+
+    .project-stack {
+      font-size: 9pt;
+      color: #555;
+      margin-bottom: 4px;
+      font-style: italic;
+    }
+
+    ul.project-bullets {
+      padding-left: 18px;
+      font-size: 9.5pt;
+      color: #333;
+    }
+    ul.project-bullets li { margin-bottom: 2px; }
+
+    /* ── EXPERIENCE ── */
+    .exp-entry { margin-bottom: 14px; }
+    .exp-entry:last-child { margin-bottom: 0; }
+
+    .exp-role {
+      font-weight: 700;
+      font-size: 10.5pt;
+    }
+
+    .exp-org {
+      font-size: 9.5pt;
+      color: #444;
+      margin-bottom: 4px;
+    }
+
+    ul.exp-bullets {
+      padding-left: 18px;
+      font-size: 9.5pt;
+      color: #333;
+    }
+    ul.exp-bullets li { margin-bottom: 2px; }
+
+    /* ── CERTIFICATIONS ── */
+    .cert-entry {
+      font-size: 9.5pt;
+      color: #222;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+    .cert-entry strong { font-weight: 700; color: #0a0a0a; }
+    .cert-entry a { color: #1e50a0; font-size: 9pt; text-decoration: none; }
+    .cert-entry a:hover { text-decoration: underline; }
+
+    /* ── STRENGTHS ── */
+    ul.strengths {
+      padding-left: 18px;
+      font-size: 9.5pt;
+      color: #333;
+    }
+    ul.strengths li { margin-bottom: 3px; }
+
+    /* ── PERSONAL / REFS ── */
+    .personal-table { width: 100%; border-collapse: collapse; }
+    .personal-table td {
+      font-size: 9.5pt;
+      padding: 2px 0;
+      vertical-align: top;
+    }
+    .personal-table td:first-child {
+      font-weight: 700;
+      width: 140px;
+    }
+
+    .refs-text {
+      font-size: 9.5pt;
+      color: #333;
+    }
+
+    /* ── PRINT ── */
+    @media print {
+      body { background: #fff; }
+      .page { padding: 20px 36px; max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="cv-header">
+    <div class="cv-name">Kabelo Mashoene</div>
+    <div class="cv-title">Data Analyst &middot; Software Developer &middot; Computer Science Student</div>
+    <div class="cv-contact">
+      <span>&#9993; <a href="mailto:kabelomashoene75@gmail.com">kabelomashoene75@gmail.com</a></span>
+      <span>&#9646; 082 860 7677</span>
+      <span><a href="https://www.linkedin.com/in/kabelo-mashoene-169829386" target="_blank">linkedin.com/in/kabelo-mashoene-169829386</a></span>
+    </div>
+    <div class="cv-contact-row2">
+      <span>&#9646; Portfolio: <a href="https://k-a-v-e-l-o.github.io/mashoenes-portfolio" target="_blank">k-a-v-e-l-o.github.io/mashoenes-portfolio</a></span>
+      <span>GitHub: <a href="https://github.com/k-a-v-e-l-o" target="_blank">github.com/k-a-v-e-l-o</a></span>
+    </div>
+    <hr class="header-line">
+  </div>
+
+  <!-- PROFESSIONAL SUMMARY -->
+  <div class="section summary">
+    <div class="section-title">Professional Summary</div>
+    <p>Third-year Computer Science student at Tshwane University of Technology with hands-on experience building and deploying full-stack web applications, desktop tools, and data-driven solutions. Holds three IBM-certified credentials in Data Science and participated in the IBM Z Global Datathon 2025. Combines strong analytical thinking with practical software development skills to deliver solutions that create real-world impact. Actively seeking a Data Analyst or Junior Developer internship.</p>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-title">Education</div>
+
+    <div class="edu-entry">
+      <div class="edu-degree">Diploma in Computer Sciences</div>
+      <div class="edu-school">Tshwane University of Technology &middot; Pretoria, South Africa &nbsp;|&nbsp; 2024 – Present</div>
+      <div class="edu-year">Third-Year Student</div>
+      <ul class="edu-bullets">
+        <li>Modules: Data Structures &amp; Algorithms, Object-Oriented Programming, Database Management, Operating Systems, Software Engineering, Networks</li>
+        <li>Strong results in programming modules (Java, Python, Web Technologies)</li>
+        <li>Volunteer peer tutor — assisting first- and second-year students with Java, Python, and web development</li>
+      </ul>
+    </div>
+
+    <div class="edu-entry">
+      <div class="edu-degree">National Senior Certificate (Bachelor's Pass)</div>
+      <div class="edu-school">Dinao Senior Secondary School &middot; Emalahleni, Mpumalanga &nbsp;|&nbsp; Completed: Dec 2022</div>
+      <ul class="edu-bullets">
+        <li>Subjects: Mathematics, Physical Sciences, Life Sciences, Agricultural Sciences, Sepedi HL, English FAL, Life Orientation</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- TECHNICAL SKILLS -->
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <table class="skills-table">
+      <tr>
+        <td>Programming Languages:</td>
+        <td>Python &middot; Java &middot; JavaScript &middot; HTML &amp; CSS &middot; Dart (Flutter)</td>
+      </tr>
+      <tr>
+        <td>Data &amp; Analytics:</td>
+        <td>Pandas &middot; NumPy &middot; Matplotlib &middot; Microsoft Excel (Pivot Tables, VLOOKUP) &middot; SQL &middot; Data Visualisation</td>
+      </tr>
+      <tr>
+        <td>Backend &amp; Frameworks:</td>
+        <td>Node.js &middot; Express.js &middot; Flutter &middot; Firebase &middot; JWT &middot; REST APIs</td>
+      </tr>
+      <tr>
+        <td>Databases:</td>
+        <td>PostgreSQL (Supabase) &middot; SQL &middot; Firebase Firestore</td>
+      </tr>
+      <tr>
+        <td>Tools &amp; Systems:</td>
+        <td>Git &amp; GitHub &middot; Linux (Ubuntu, CLI) &middot; SSH/SCP &middot; Bash Scripting &middot; Render (Deployment)</td>
+      </tr>
+      <tr>
+        <td>IDEs &amp; Editors:</td>
+        <td>Visual Studio Code &middot; IntelliJ IDEA &middot; NetBeans &middot; Notepad++</td>
+      </tr>
+      <tr>
+        <td>Microsoft Office:</td>
+        <td>Word &middot; Excel &middot; PowerPoint</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section">
+    <div class="section-title">Projects</div>
+
+    <!-- ResumeIQ -->
+    <div class="project-entry">
+      <div class="project-header">
+        ResumeIQ — AI Career Platform &nbsp;|&nbsp; <a href="https://resumeiq-1-f1zh.onrender.com" target="_blank">resumeiq-1-f1zh.onrender.com</a>
+        &nbsp;&middot;&nbsp; <a href="https://github.com/k-a-v-e-l-o/ResumeIQ" target="_blank">github.com/k-a-v-e-l-o/ResumeIQ</a>
+      </div>
+      <div class="project-stack">Stack: Node.js &middot; Express.js &middot; PostgreSQL (Supabase) &middot; Groq AI (LLaMA) &middot; Firebase Auth &middot; JWT &middot; HTML/CSS/JS</div>
+      <ul class="project-bullets">
+        <li>Full-stack AI-powered career platform bridging candidates and employers — live in production on Render</li>
+        <li>Built real-time resume-to-job AI match scoring using Groq SDK (LLaMA) and an AI cover letter generator</li>
+        <li>Implemented employer dashboard, live job board, in-platform messaging, admin panel, and Google Sign-In via Firebase</li>
+        <li>Designed and managed a relational PostgreSQL schema on Supabase with JWT-secured REST API routes</li>
+      </ul>
+    </div>
+
+    <!-- Bang Fashion 2.0 -->
+    <div class="project-entry">
+      <div class="project-header">
+        Bang Fashion 2.0 &nbsp;|&nbsp; Live Web Application &nbsp;&middot;&nbsp;
+        <a href="https://k-a-v-e-l-o.github.io/bang-fashion-2.0" target="_blank">k-a-v-e-l-o.github.io/bang-fashion-2.0</a>
+      </div>
+      <div class="project-stack">Stack: HTML &middot; CSS &middot; JavaScript</div>
+      <ul class="project-bullets">
+        <li>Full e-commerce fashion platform with product catalogue, cart functionality, and responsive storefront</li>
+        <li>Redesigned from v1 — improved UX, cleaner codebase, and enhanced mobile performance</li>
+        <li>Deployed and publicly accessible via GitHub Pages</li>
+      </ul>
+    </div>
+
+    <!-- Coffee Orders -->
+    <div class="project-entry">
+      <div class="project-header">
+        Coffee Orders Data Analysis &nbsp;|&nbsp; Excel Analytics Project &nbsp;&middot;&nbsp;
+        <a href="https://github.com/k-a-v-e-l-o/Coffe-Orders-Analysis" target="_blank">github.com/k-a-v-e-l-o/Coffe-Orders-Analysis</a>
+      </div>
+      <div class="project-stack">Stack: Microsoft Excel &middot; Pivot Tables &middot; Data Cleaning &middot; Dashboard Design</div>
+      <ul class="project-bullets">
+        <li>Analysed coffee sales data across the US, Ireland, and the UK — uncovering $45K+ in total revenue insights</li>
+        <li>Built interactive pivot tables and a sales dashboard to visualise performance across three markets</li>
+        <li>Demonstrated data cleaning, transformation, and business insight extraction entirely in Excel</li>
+      </ul>
+    </div>
+
+    <!-- EduTrack -->
+    <div class="project-entry">
+      <div class="project-header">
+        EduTrack &nbsp;|&nbsp; Education Management Frontend &nbsp;&middot;&nbsp;
+        <a href="https://k-a-v-e-l-o.github.io/Edutrack/frontend" target="_blank">k-a-v-e-l-o.github.io/Edutrack/frontend</a>
+      </div>
+      <div class="project-stack">Stack: HTML &middot; CSS &middot; JavaScript</div>
+      <ul class="project-bullets">
+        <li>Student progress and assignment tracking platform built for academic institutions</li>
+        <li>Clean, accessible UI with intuitive navigation and responsive layout</li>
+      </ul>
+    </div>
+
+    <!-- Register Kids -->
+    <div class="project-entry">
+      <div class="project-header">
+        Register Kids &nbsp;|&nbsp; Java Desktop Application &nbsp;&middot;&nbsp;
+        <a href="https://github.com/k-a-v-e-l-o" target="_blank">github.com/k-a-v-e-l-o</a>
+      </div>
+      <div class="project-stack">Stack: Java &middot; Swing &middot; File I/O &middot; OOP</div>
+      <ul class="project-bullets">
+        <li>Desktop GUI app for crèche child registration — name entry, gender selection, file persistence (.txt)</li>
+        <li>Demonstrates Java Swing, event-driven programming, and file handling</li>
+      </ul>
+    </div>
+
+    <!-- IBM Z Datathon -->
+    <div class="project-entry">
+      <div class="project-header">IBM Z Datathon 2025 &nbsp;|&nbsp; Global Competitive Data Event</div>
+      <div class="project-stack">Stack: Python &middot; Data Analysis &middot; Problem Solving</div>
+      <ul class="project-bullets">
+        <li>Participated in the IBM Z Global Datathon hosted by Shooting Stars Foundation × IBM</li>
+        <li>Applied data analysis and model thinking on enterprise-scale datasets under time pressure</li>
+        <li>Awarded Certificate of Participation</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Experience</div>
+
+    <div class="exp-entry">
+      <div class="exp-role">Private Tutor — Grade 12 Learners</div>
+      <div class="exp-org">Emalahleni, Mpumalanga &nbsp;|&nbsp; 2024 – Present</div>
+      <ul class="exp-bullets">
+        <li>One-on-one tutoring in Mathematics, Physical Sciences, and Life Sciences</li>
+        <li>Developed customised revision plans to address individual learning gaps and improve exam performance</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <div class="section">
+    <div class="section-title">Certifications</div>
+    <div class="cert-entry"><strong>Data Science 101</strong> — IBM / CognitiveClass.ai &middot; Sep 2025 &nbsp;<a href="https://courses.cognitiveclass.ai/certificates/e15a67ec2486404e96d1a05bd10e9d6b" target="_blank">Verify</a></div>
+    <div class="cert-entry"><strong>Data Science Tools</strong> — IBM / CognitiveClass.ai &middot; Sep 2025 &nbsp;<a href="https://courses.cognitiveclass.ai/certificates/10a93c1c031d4d1f998a61225652 3a5f" target="_blank">Verify</a></div>
+    <div class="cert-entry"><strong>Introduction to Cybersecurity Awareness</strong> — Cisco / Online &middot; Sep 2025</div>
+    <div class="cert-entry"><strong>Data Science &amp; Analytics</strong> — Online Platform &middot; Sep 2025</div>
+    <div class="cert-entry"><strong>IT for Business Success</strong> — Online Platform &middot; Sep 2025</div>
+    <div class="cert-entry"><strong>IBM Z Datathon 2025 — Participation</strong> — Shooting Stars Foundation × IBM &middot; 2025</div>
+  </div>
+
+  <!-- KEY STRENGTHS -->
+  <div class="section">
+    <div class="section-title">Key Strengths</div>
+    <ul class="strengths">
+      <li>Strong analytical and problem-solving mindset — comfortable breaking down complex data and logic problems</li>
+      <li>Excellent verbal and written communication; able to explain technical concepts clearly to non-technical audiences</li>
+      <li>Self-motivated fast learner who consistently upskills independently (IBM certifications, open-source projects)</li>
+      <li>Collaborative team player with experience mentoring peers and working under deadline pressure</li>
+      <li>High attention to detail — from code quality to data accuracy and UI polish</li>
+    </ul>
+  </div>
+
+  <!-- PERSONAL INFORMATION -->
+  <div class="section">
+    <div class="section-title">Personal Information</div>
+    <table class="personal-table">
+      <tr><td>Date of Birth:</td><td>28 April 2005</td></tr>
+      <tr><td>Nationality:</td><td>South African</td></tr>
+      <tr><td>Home Language:</td><td>Sepedi &middot; English (professional proficiency)</td></tr>
+      <tr><td>Location:</td><td>Zeekoewater, Emalahleni, Mpumalanga, 1035</td></tr>
+      <tr><td>Availability:</td><td>Available for internships, part-time, and remote roles</td></tr>
+    </table>
+  </div>
+
+  <!-- REFERENCES -->
+  <div class="section">
+    <div class="section-title">References</div>
+    <div class="refs-text">Available on request. &nbsp;&nbsp; LT Mashoene: 064 871 0846 &nbsp;&middot;&nbsp; LJ Mashoene: 079 056 4809</div>
+  </div>
+
+</div>
+</body>
+</html>
